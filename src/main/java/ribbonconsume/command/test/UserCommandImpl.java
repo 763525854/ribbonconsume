@@ -1,6 +1,6 @@
 package ribbonconsume.command.test;
 
-import com.netflix.hystrix.contrib.javanica.command.AsyncResult;
+//import com.netflix.hystrix.contrib.javanica.command.AsyncResult;
 
 import io.netty.util.concurrent.Future;
 import ribbonconsume.command.UserCommand;
@@ -17,13 +17,13 @@ public class UserCommandImpl {
 		Future<User> futureUser = (Future<User>) new UserCommand(null, null, 1L).queue();
 	}
 
-	public AsyncResult<User> async() {
-		return new AsyncResult<User>() {
-			@Override
-			public User invoke() {
-				return null;
-			}
-
-		};
-	}
+//	public AsyncResult<User> async() {
+//		return new AsyncResult<User>() {
+//			@Override
+//			public User invoke() {
+//				return null;
+//			}
+//
+//		};
+//	}
 }
